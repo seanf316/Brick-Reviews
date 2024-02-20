@@ -1,2 +1,27 @@
 {% extends 'base.html' %}
+{% load static %}
 
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="row flex-wrap-reverse">
+            <div class="col-lg-6 col-md-6 mb-3 p-3 d-flex flex-column align-items-center justify-content-center">
+                <h1 class="text-uppercase text-center fw-bold text-danger">
+                    Discover, Build, Review!
+                </h1>
+                <p>Welcome to Brick Reviews, where the community speaks! Dive into a treasure trove of user-generated
+                    evaluations on alternative brick builds from top retailers like joooooy.com, youmko.com, Marstoy,
+                    and Aliexpress. Our platform is fueled by the insights and experiences of fellow enthusiasts like
+                    yourself, ensuring honest, authentic perspectives on a wide range of creations. Whether you're
+                    seeking inspiration for your next project or looking to make informed purchasing decisions, Brick
+                    Reviews empowers you with real user feedback. Join our vibrant community, explore diverse creations,
+                    and contribute your own insights to help others on their brick-building journey.</p>
+            </div>
+            <div class="col-lg-6 col-md-6 my-auto d-flex justify-content-center align-items-center">
+                <img src="{% static 'images/falcon.png' %}"
+                    class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
